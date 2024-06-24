@@ -1,0 +1,40 @@
+#chatContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#chatRoom {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+
+}
+
+#inputContainer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#messageInput {
+    margin-right: 5px; /* Adds a small space between the input and the button */
+    width: 300px; /* Example width, adjust as needed */
+}
+
+#submitMessage {
+    width: 100px; /* Example width, adjust as needed */
+
+}
+
+#chatroomSelect {
+    margin-bottom: 10px;
+}
+

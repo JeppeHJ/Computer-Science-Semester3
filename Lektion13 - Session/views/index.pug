@@ -1,0 +1,16 @@
+html
+    head
+        title Indkøbsapp
+        script(src="/main.js")
+    body
+        h1 Velkommen til Indkøbsapplikationen
+        ul
+            each product in products
+                li
+                    #{product.name}
+                    button(onclick='clickFunction("' + product.id + '")') Køb
+        if cart.length > 0
+            h2 Din indkøbskurv
+            ul
+                each id in cart
+                    li Produkt ID: #{id}

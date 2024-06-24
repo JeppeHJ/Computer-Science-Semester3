@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title Bruger Information
+    body
+        h1 Bruger Profil
+        ul
+            each user in users
+                li #{user.username} - Alder: #{user.age} - Farve: #{user.color} - Nationalitet: #{user.nationality}

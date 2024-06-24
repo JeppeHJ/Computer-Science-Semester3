@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Opgave 3.3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto; /* Two columns */
+            grid-gap: 10px; /* Spacing between items */
+            padding: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .link-container {
+            grid-column: 1 / span 2; /* Span the link across both columns */
+            text-align: center; /* Center the link text */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brætspil: Kryds og bolle</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="../Lektion3 - HTML CSS/Materiale/Eksempler/HTML/Kryds og bolle.jpg">
+        </div>
+        <div class="grid-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="grid-item">
+            <img src="../Lektion3 - HTML CSS/Materiale/Eksempler/HTML/Kryds og bolle.jpg">
+        </div>
+        <div class="grid-item">
+            <p>RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT RANDOM TEXT</p>
+        </div>
+        <div class="link-container">
+            <a href="https://www.wikipedia.com">Kryds og bolle - Wikipedia, den frie encyclopedia</a>
+        </div>
+    </div>
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser...</p>
+    <![endif]-->
+    
+    <script src="" async defer></script>
+</body>
+</html>

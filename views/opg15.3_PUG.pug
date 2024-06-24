@@ -1,0 +1,16 @@
+// Grundlæggende HTML5 dokumentstruktur
+doctype html
+html
+    head
+        // Definerer titlen på dokumentet
+        title Bruger Information
+    body
+        // Opretter en overskrift for siden
+        h1 Bruger Profil
+
+        // Viser brugerens username, age, og color ved at tilgå 'user'-objektet, som er sendt fra serveren.
+        // #{variable} notationen bruges til at indsætte værdierne af variablerne i Pug.
+        ul 
+        each user in users
+            li= val.username + val.age + val.color
+        
